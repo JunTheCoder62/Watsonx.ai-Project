@@ -17,7 +17,8 @@ This example shows simple use cases without comprehensive prompt tuning
 
 # For reading credentials from the .env file
 import os
-from dotenv import load_dotenv
+
+import streamlit as st
 
 # WML python SDK
 from ibm_watson_machine_learning.foundation_models import Model
@@ -33,12 +34,12 @@ from ibm_cloud_sdk_core import IAMTokenManager
 # can be stored in an .env or a properties file
 
 # URL of the hosted LLMs is hardcoded because at this time all LLMs share the same endpoint
-url = "https://us-south.ml.cloud.ibm.com"
+url = "https://jp-tok.ml.cloud.ibm.com"
 
 # These global variables will be updated in get_credentials() functions
-watsonx_project_id = ""
+watsonx_project_id = "6da063aa-abe7-4d6a-8ceb-0bad8657fdc8"
 # Replace with your IBM Cloud key
-api_key = ""
+api_key = "kB_-msYQM4N1dOYAjwHJWQU_laoLaZFZY2QnYvcJ4imB"
 
 def get_credentials():
 
