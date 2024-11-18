@@ -63,3 +63,5 @@ def answer_questions():
 if __name__ == "__main__":
     answer_questions()
 
+import ibm_watson_machine_learning
+print(ibm_watson_machine_learning.__version__)
